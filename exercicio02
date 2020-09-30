@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(void){
+  setlocale(LC_ALL,"");
+  double h = 0.0, b, n;
+  printf("numero para a série harmonica:");
+  scanf("%lf",&n);
+
+  for (b=0; b < n; b++){
+    h = h + (1/(b+1));
+  }
+  printf("%.16lf", h);
+
+  return 0;
+}
