@@ -1,0 +1,19 @@
+\\exercicio01
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+  setlocale(LC_ALL,"");
+  float chico = 1.5, ze = 1.1;
+  float r_chico = 0.02, r_ze = 0.03;
+  int b;
+
+  for (b=0; chico > ze; ++b){
+      chico = chico + r_chico;
+      ze= ze + r_ze;
+   }
+   printf("serão necesario %d anos para zé ficar maior que chico.",b);
+   return 0;
+
+}
